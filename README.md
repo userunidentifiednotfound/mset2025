@@ -18,36 +18,6 @@ Join us at **MSET 2025**, the **FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLIN
 - **Hall & Room Allotment**: Automated allocation for workshops and discussions.
 - **Admin Panel**: Centralized management for event organizers.
 
-## 🕒 Live Countdown to MSET 2025
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <script>
-        function countdown() {
-            const eventDate = new Date("April 25, 2025 00:00:00").getTime();
-            const x = setInterval(function() {
-                let now = new Date().getTime();
-                let distance = eventDate - now;
-                let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-                if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("countdown").innerHTML = "Event Started!";
-                }
-            }, 1000);
-        }
-    </script>
-</head>
-<body onload="countdown()">
-    <h3>Time Until MSET 2025:</h3>
-    <p id="countdown"></p>
-</body>
-</html>
-```
 
 ## 🤝 Get Involved
 - **Register Now**: Be part of MSET 2025!
