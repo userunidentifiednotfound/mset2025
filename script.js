@@ -26,3 +26,17 @@ function showDetails(imageSrc, name, designation) {
     document.getElementById('name').textContent = name;
     document.getElementById('designation').textContent = designation;
 }
+
+// Function to close the popup
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+function downloadBrochure() {
+    const link = document.createElement('a');
+    link.href = '\\assests\\ICMSET 25 .pdf'; // Change this to your actual brochure file path
+    link.download = 'brochure.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
