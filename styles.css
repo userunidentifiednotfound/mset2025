@@ -107,6 +107,122 @@ body {
         0% { transform: translateX(100%); }
         100% { transform: translateX(-100%); }
       }
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .navbar-left {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .navbar-left h2, 
+    .navbar-left p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        gap: 10px;
+        margin-right: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .navbar .logo img {
+        height: 50px;
+    }
+
+    .navbar-left h2 {
+        font-size: 18px;
+    }
+
+    .navbar-left p {
+        font-size: 10px;
+    }
+
+    .nav-links {
+        display: none; /* Hide links on smaller screens */
+        flex-direction: column;
+        background: #001C4F;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-left h2 {
+        font-size: 16px;
+    }
+
+    .navbar-left p {
+        font-size: 8px;
+    }
+
+    .navbar .logo img {
+        height: 40px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Marquee Adjustments */
+@media screen and (max-width: 768px) {
+    .marquee-alternate {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+}
 
 /*Banner*/
 
