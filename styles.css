@@ -257,13 +257,38 @@ strong{
 }
 
 /*Banner 2*/
-.logo2{
-    background-color: #fed501;
+.logo2 {
+    max-width: 100%;
+    background-color: #FED501;
     display: flex;
     justify-content: center;
     align-items: center;
-     
+    padding: 10px;
 }
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .logo2 {
+        max-width: 100%;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo2 {
+        max-width: 100%;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo2 {
+        max-width: 100%;
+        padding: 4px;
+        flex-direction: column; /* Stack content for better mobile display */
+    }
+}
+
 
 /*About Section of DSU*/
 .about-container {
