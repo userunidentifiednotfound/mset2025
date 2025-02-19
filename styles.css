@@ -107,7 +107,9 @@ body {
         0% { transform: translateX(100%); }
         100% { transform: translateX(-100%); }
       }
-/* Responsive Design */
+
+
+      /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .navbar {
         flex-direction: column;
@@ -257,13 +259,14 @@ strong{
 }
 
 /*Banner 2*/
-.logo2 {
+.logo2{
+    
     max-width: 100%;
-    background-color: #FED501;
+    background-color: #fed501;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+     
 }
 
 /*About Section of DSU*/
