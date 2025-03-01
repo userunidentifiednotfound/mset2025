@@ -30,9 +30,9 @@
             </div>
         </div>
 <hr>
-        <div class="marquee-alternate">
-            <a href="https://forms.gle/AmMqxGii13QQccs77" target="_blank">🎉 ABSTRACT SUBMISSION DEADLINE : [ 28 / 02 / 25] </a>
-        </div>
+<div class="marquee-alternate">
+    <a href="https://forms.gle/AmMqxGii13QQccs77" target="_blank">🎉 ABSTRACT SUBMISSION DEADLINE <span class="blink">**EXTENDED**</span> : [ 07 / 03 / 25] </a>
+</div>
 
         <div class="popup-container" id="popup">
             <div class="popup">
@@ -84,21 +84,69 @@
               </div>
               
           </div>    
-        <section id="home">
+          <div class="slider-container">
+            <button class="button prev">&#10094;</button>
             <div class="banner">
-                <!--image-->
-                <a href="https://forms.gle/AmMqxGii13QQccs77" target="_blank">
-                    <img src="/assests/mset1.png" alt="MSET 2025 Conference Banner" style="width: 100%; height: auto;">
-                </a>
+                <div class="slider">
+                    <div class="slide">
+                        <a href="https://forms.gle/AmMqxGii13QQccs77" target="_blank">
+                            <img src="/assests/mset1.png" alt="MSET 2025 Conference Banner" width="100%">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://forms.gle/AmMqxGii13QQccs77" target="_blank">
+                            <img src="/assests/mset2.png" alt="MSET 2025 Conference Banner" width="100%">
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://forms.gle/AmMqxGii13QQccs77" target="_blank">
+                            <img src="/assests/mset3.png" alt="MSET 2025 Conference Banner" width="100%">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </section>
+            <button class="button next">&#10095;</button>
+        </div>
+<script>document.addEventListener("DOMContentLoaded", function () {
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const slider = document.querySelector('.slider');
 
+    function moveSlide(direction) {
+        currentIndex += direction;
+
+        if (currentIndex < 0) {
+            currentIndex = totalSlides - 1;
+        } else if (currentIndex >= totalSlides) {
+            currentIndex = 0;
+        }
+
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Attach event listeners to buttons
+    document.querySelector(".prev").addEventListener("click", function () {
+        moveSlide(-1);
+    });
+
+    document.querySelector(".next").addEventListener("click", function () {
+        moveSlide(1);
+    });
+
+    // Auto-slide every 5 seconds
+    setInterval(() => moveSlide(1), 5000);
+});
+</script>            
+<hr>
+        
+        
         <section class="about">
-            <h1>We cordially invite you to join us at <span>MSET2025! </span><br>
+            <h1 style="font-family: 'Times New Roman', Times, serif;">We cordially invite you to join us at <span>MSET2025! </span><br>
                 April, 2025 | Trichy,Tamil Nadu</h1>
-            <p >
+            <p style="font-family: 'Times New Roman', Times, serif;">
                 Join us at the MSET2025 on APRIL 2025 in Trichy,Tamil Nadu This event focuses on 
-                <strong style="color: #1e54b8;">"FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS FOR EMERGING TRENDS"</strong> Engage with experts, 
+                <strong style="color: #1e54b8;font-size: 20px;" >"FIRST INTERNATIONAL CONFERENCE ON MULTIDISCIPLINARY SOLUTIONS FOR EMERGING TRENDS"</strong> Engage with experts, 
                 policymakers, and professionals from around the world to discuss and develop innovative solutions 
                 to challenges surrounding pandemics. Don't miss this opportunity to network, share knowledge, 
                 and contribute to global health resilience. Register now and be part of the conversation that 
@@ -179,6 +227,7 @@
             </div>
             <div class="event-image">
                 <img src="/assests/image.png" alt="Event Speaker" height="70%">
+                
             </div>
         </section>
         
@@ -225,151 +274,147 @@
         <section id="topics">
             <div id="event-container" class="section">
                 <center><h1 style="font-size: 24px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif c:\Users\karth\Downloads\mset (2).png;">Thematic Sessions</h1></center>
-                <div class="flip-card-container">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="/assests/tac.jpg" alt="Agriculture Icon">
-                                 Technological Advancements & Challenges
-                            </div>
-                            <div class="flip-card-back">
-                                Explore the opportunities and challenges posed by AI, automation, and IoT in transforming industries while addressing growing cybersecurity threats that require robust data protection and privacy solutions.
+                    <div class="topics-container">
+                        <div class="topic-card">
+                                <div class="topic-title">
+                                    <img src="/assests/tac.jpg" alt="Agriculture Icon">
+                                    Technological Advancements & Challenges
+                                </div>
+                                <div class="topic-description">
+                                    Explore the opportunities and challenges posed by AI, automation, and IoT in transforming industries while addressing growing cybersecurity threats that require robust data protection and privacy solutions.
+                                </div>
+                        </div>
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                        <img src="/assests/fs.jpg" alt="Agriculture Icon">
+                                        Food Science & Biotechnology in Agriculture
+                                </div>
+                                <div class="topic-description">
+                                    Development of genetically modified crops, sustainable farming practices, biotechnology in pest and disease control, improving crop yields and quality.
+                                
                             </div>
                         </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="/assests/fs.jpg" alt="Agriculture Icon">
-                                    Food Science & Biotechnology in Agriculture
-                            </div>
-                            <div class="flip-card-back">
-                                Development of genetically modified crops, sustainable farming practices, biotechnology in pest and disease control, improving crop yields and quality.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="/assests/ilaf.jpg ">
-                                Integrated Approaches in Life Science
-                            </div>
-                            <div class="flip-card-back">
-                                Interdisciplinary research in biology and medicine, advances in genomics and proteomics, innovative approaches to disease treatment, collaboration between academic and industry researchers.
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                                    <img src="/assests/ilaf.jpg ">
+                                    Integrated Approaches in Life Science
+                                </div>
+                                <div class="topic-description">
+                                    Interdisciplinary research in biology and medicine, advances in genomics and proteomics, innovative approaches to disease treatment, collaboration between academic and industry researchers.
+                                
                             </div>
                         </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="/assests/04.jpg">
-                                Sustainability & Climate Change
-                            </div>
-                            <div class="flip-card-back">
-                                 Discuss how innovations in renewable energy, green technologies, and circular economies can mitigate climate change impacts such as rising temperatures, extreme weather events, and their effects on agriculture, water resources, and health.
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                                    <img src="/assests/04.jpg">
+                                    Sustainability & Climate Change
+                                </div>
+                                <div class="topic-description">
+                                    Discuss how innovations in renewable energy, green technologies, and circular economies can mitigate climate change impacts such as rising temperatures, extreme weather events, and their effects on agriculture, water resources, and health.
+                                </div>
+                            
+                        </div>
+                        <div class="topic-card">
+                        
+                                <div class="topic-title">
+                                <img src="/assests/05.jpg">
+                                    Collaborative Research in Pure and Applied Mathematics
+                                </div>
+                                <div class="topic-description">
+                                    Advancements in theoretical mathematics, applications of mathematics in various industries, cross-disciplinary collaborations, impact of mathematical research on technology and society.
+                                </div>
+                            
+                        </div>
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                                <img src="/assests/06.jpg">
+                                    Healthcare Disparities & Aging Population
+                                </div>
+                                <div class="topic-description">
+                                    Addressing gaps in healthcare access in resource-limited regions, meeting the needs of the aging population, technological solutions like telemedicine and AI diagnostics, policy initiatives for equitable healthcare.
+                                </div>
+                            
+                        </div>
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                                <img src="/assests/07.jpg">
+                                    Urbanization & Resource Management
+                                </div>
+                                <div class="topic-description">
+                                    Delve into the pressures of rapid urbanization on water resources, exploring sustainable water management solutions for cities facing scarcity, pollution, and increased demand.
+                                </div>
+                            
+                        </div>
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                                <img src="/assests/08.jpg">
+                                    Globalization & Economic Inequality
+                                </div>
+                                <div class="topic-description">
+                                    Examine how globalization fosters innovation but also exacerbates economic inequality, and discuss policies to ensure a more equitable distribution of economic benefits.
+                                </div>
+                        
+                        </div>
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                                    <img src="/assests/09.jpg">
+                                    📚 Education Access & Social Stability
+                                </div>
+                                <div class="topic-description">
+                                    Focus on the role of education in driving societal change, addressing the impacts of unequal access to quality education on poverty, unemployment, and social unrest.
+                                
                             </div>
                         </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="/assests/05.jpg">
-                                Collaborative Research in Pure and Applied Mathematics
-                            </div>
-                            <div class="flip-card-back">
-                                Advancements in theoretical mathematics, applications of mathematics in various industries, cross-disciplinary collaborations, impact of mathematical research on technology and society.
-                            </div>
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                                    <img src="/assests/10.jpg">
+                                    Wellness Focus & Global Health Crises
+                                </div>
+                                <div class="topic-description">
+                                    Analyze the increasing focus on health and wellness, while addressing the ongoing global health crises, including pandemics and chronic diseases, particularly in underserved regions.
+                                </div>
+                        
                         </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="/assests/06.jpg">
-                                Healthcare Disparities & Aging Population
-                            </div>
-                            <div class="flip-card-back">
-                                Addressing gaps in healthcare access in resource-limited regions, meeting the needs of the aging population, technological solutions like telemedicine and AI diagnostics, policy initiatives for equitable healthcare.
-                            </div>
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                                    <img src="/assests/11.jpg">
+                                    Migration & Geopolitical Instability
+                                </div>
+                                <div class="topic-description">
+                                    Investigate the political and social challenges associated with migration driven by conflict, economic instability, and climate change, and explore solutions for integrating displaced populations.
+                                </div>
+                            
                         </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="/assests/07.jpg">
-                                Urbanization & Resource Management
-                            </div>
-                            <div class="flip-card-back">
-                                Delve into the pressures of rapid urbanization on water resources, exploring sustainable water management solutions for cities facing scarcity, pollution, and increased demand.
-                            </div>
+                        <div class="topic-card">
+                            
+                                <div class="topic-title">
+                                <img src="/assests/12.jpg">
+                                    Incident Response and Threat Hunting
+                                </div>
+                                <div class="topic-description">
+                                    Strategies for effective incident response, techniques for threat detection and hunting, tools and technologies for cybersecurity, collaboration and information sharing.
+                                </div>
+                            
                         </div>
+                        <div class="topic-card">
+                                <div class="topic-title">
+                                <img src="/assests/06.jpg">
+                                Digital humanities, pedagogy & softskills
+                                </div>
+                                <div class="topic-description">
+                                    Addressing gaps in healthcare access in resource-limited regions, meeting the needs of the aging population, technological solutions like telemedicine and AI diagnostics, policy initiatives for equitable healthcare.
+                                </div>
+                            </div>
                     </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="/assests/08.jpg">
-                                Globalization & Economic Inequality
-                            </div>
-                            <div class="flip-card-back">
-                                Examine how globalization fosters innovation but also exacerbates economic inequality, and discuss policies to ensure a more equitable distribution of economic benefits.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="/assests/09.jpg">
-                                📚 Education Access & Social Stability
-                            </div>
-                            <div class="flip-card-back">
-                                Focus on the role of education in driving societal change, addressing the impacts of unequal access to quality education on poverty, unemployment, and social unrest.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="/assests/10.jpg">
-                                 Wellness Focus & Global Health Crises
-                            </div>
-                            <div class="flip-card-back">
-                                Analyze the increasing focus on health and wellness, while addressing the ongoing global health crises, including pandemics and chronic diseases, particularly in underserved regions.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="/assests/11.jpg">
-                                Migration & Geopolitical Instability
-                            </div>
-                            <div class="flip-card-back">
-                                Investigate the political and social challenges associated with migration driven by conflict, economic instability, and climate change, and explore solutions for integrating displaced populations.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="/assests/12.jpg">
-                                Incident Response and Threat Hunting
-                            </div>
-                            <div class="flip-card-back">
-                                Strategies for effective incident response, techniques for threat detection and hunting, tools and technologies for cybersecurity, collaboration and information sharing.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                            <img src="/assests/06.jpg">
-                            Digital humanities, pedagogy & softskills
-                            </div>
-                            <div class="flip-card-back">
-                                Addressing gaps in healthcare access in resource-limited regions, meeting the needs of the aging population, technological solutions like telemedicine and AI diagnostics, policy initiatives for equitable healthcare.
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
             
@@ -389,6 +434,10 @@
                             <td>FEBRUARY 28, 2025</td>
                         </tr>
                         <tr>
+                            <td class="extended-deadline">REGISTRATION DEADLINE EXTENDED</td>
+                            <td class="extended-deadline">MARCH 7TH, 2025</td>
+                        </tr>
+                        <tr>
                             <td>FULL PAPER SUBMISSION</td>
                             <td>MARCH 31, 2025</td>
                         </tr>
@@ -396,10 +445,7 @@
                             <td>ACCEPTANCE REVELATION</td>
                             <td>MARCH 5, 2025</td>
                         </tr>
-                        <tr>
-                            <td>REGISTRATION DEADLINE</td>
-                            <td>FEBRUARY 28, 2025</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
                 
@@ -581,7 +627,7 @@
                                 </div>
                                 <div class="committee-member">
                                     <div class="member-info">
-                                        <strong>Dr. J. Mathana</strong>
+                                        <strong>Dr. J. M. Mathana</strong>
                                         <p>Dean Academics, DSU</p>
                                     </div>
                                 </div>
@@ -597,7 +643,7 @@
                 
                         <!-- Technical Advisors -->
                         <div class="team-category technical-advisors-section">
-                            <h3>Technical Advisors</h3>
+                            <h3>Advisory Council</h3>
                             <div class="team-grid">
                                 <div class="committee-member">
                                     <div class="member-info">
@@ -619,49 +665,56 @@
                                 </div>
                                 <div class="committee-member">
                                     
-                                    <div class="text-container">
+                                    <div class="member-info">
                                         <strong>Dr. K. Chozhan</strong>
                                         <p>Dean, SAS, DSU</p>
                                     </div>
                                 </div>
                                 <div class="committee-member">
                                    
-                                    <div class="text-container">
+                                    <div class="member-info">
                                         <strong>Dr. J. Ramesh Kumar</strong>
                                         <p>Dean, Physiotherapy, DSU</p>
                                     </div>
                                 </div>
                                 <div class="committee-member">
                                     
-                                    <div class="text-container">
+                                    <div class="member-info">
                                         <strong>Dr. J. Sathiyapriya</strong>
                                         <p>Dean, Nursing, DSU</p>
                                     </div>
                                 </div>
                                 <div class="committee-member">
                                    
-                                    <div class="text-container">
+                                    <div class="member-info ">
                                         <strong>Dr. S. Akilandeswari</strong>
                                         <p>Dean, SOP, DSU</p>
                                     </div>
                                 </div>
                                 <div class="committee-member">
                                    
-                                    <div class="text-container">
+                                    <div class="member-info">
                                         <strong>Ar.P. Jeyaprakash</strong>
                                         <p>Dean, SOA, DSU</p>
                                     </div>
                                 </div>
                                 <div class="committee-member">
                                     
-                                    <div class="text-container">
-                                        <strong>Dr. Anandavel</strong>
+                                    <div class="member-info">
+                                        <strong>Dr.V. Anandavel</strong>
                                         <p>Associate Dean, SOM, DSU</p>
                                     </div>
                                 </div>
                                 <div class="committee-member">
                                     
-                                    <div class="text-container">
+                                    <div class="member-info">
+                                        <strong> R. Balabhaskar</strong>
+                                        <p>Associate Dean, SOM, DSU</p>
+                                    </div>
+                                </div>
+                                <div class="committee-member">
+                                    
+                                    <div class="member-info">
                                         <strong>Dr. B. Rajeswari</strong>
                                         <p>Dean, SOL, DSU</p>
                                     </div>
@@ -670,31 +723,30 @@
                         </div>
                 
                         <!-- Conference Chair -->
-                        <div class="team-category chair-section">
-                            <h3>Conference Chair</h3>
-                            <div class="team-grid">
-                                <div class="committee-member">
-                                    <div class="member-info">
-                                        <strong>Dr. N. Shanmugapriya</strong>
-                                        <p>HoD, AI&DS, SET, DSU</p>
+                        <div class="chair-cochair-container">
+                            <div class="team-category chair-section">
+                                <h3>Conference Chair</h3>
+                                <div class="team-grid">
+                                    <div class="committee-member">
+                                        <div class="member-info">
+                                            <strong>Dr. N. Shanmugapriya</strong>
+                                            <p>HoD, AI&DS, SET, DSU</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-category co-chair-section">
+                                <h3>Conference Co-Chair</h3>
+                                <div class="team-grid">
+                                    <div class="committee-member">
+                                        <div class="member-info">
+                                            <strong>Dr. B. Shanmugham</strong>
+                                            <p>HoD, BME, SET, DSU</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                
-                        <!-- Conference Co-Chair -->
-                        <div class="team-category co-chair-section">
-                            <h3>Conference Co-Chair</h3>
-                            <div class="team-grid">
-                                <div class="committee-member">
-                                    <div class="member-info">
-                                        <strong>Dr. B. Shanmugham</strong>
-                                        <p>HoD, BME, SET, DSU</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                
                         <!-- Finance and Sponsorship Chair -->
                         <div class="team-category finance-chair-section">
                             <h3>Finance and Sponsorship Chair</h3>
@@ -735,6 +787,12 @@
                                         <p>Assoc. Dean, SET, DSU</p>
                                     </div>
                                 </div>
+                                <div class="committee-member">
+                                    <div class="member-info">
+                                        <strong>Dr. P. Prabhu</strong>
+                                        <p>Assoc. Dean, SET, DSU</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!--Publication & Publicty Chair-->
@@ -752,6 +810,25 @@
                                 
                                 <div class="member-info">
                                     <strong>Dr. P. Rajiniganth</strong>
+                                    <p>Assoc. Prof., SET, DSU</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-category publication-publicity-chair-section">
+                        <h3>Digital chair</h3>
+                        <div class="team-grid">
+                            <div class="committee-member">
+                                
+                                <div class="member-info">
+                                    <strong>Dr. Parthasarthy Nanjundan</strong>
+                                    <p>Assoc. Prof., SET, DSU</p>
+                                </div>
+                            </div>
+                            <div class="committee-member">
+                                
+                                <div class="member-info">
+                                    <strong>Dr. C. Priya</strong>
                                     <p>Assoc. Prof., SET, DSU</p>
                                 </div>
                             </div>
@@ -812,7 +889,7 @@
                             </div>
                             <div class="committee-member">
                                 <div class="member-info">
-                                    <strong>Dr. T. Sathis Kumar</strong>
+                                    <strong cla>Dr. T. Sathis Kumar</strong>
                                     <p>HoD, AIML</p>
                                 </div>
                             </div>
@@ -846,9 +923,17 @@
                                     <p>HoD, Physics</p>
                                 </div>
                             </div>
+                            <div class="committee-member">
+                                <div class="member-info">
+                                    <strong>Dr. K. Tharmar</strong>
+                                    <p>DPE - DSU</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="team-category organizing-committee-section">
-                            <h3>Organizing Committee</h3>
+                        <div class="dropdown-item">
+                            <input type="checkbox" id="committee-toggle" class="dropdown-toggle">
+                            <label for="committee-toggle" class="dropdown-button">Organizing Committee <span class="arrow">&#9660;</span></label>
+                            <div class="dropdown-content">
                             <div class="team-grid">
                                 <div class="committee-member">
                                     <div class="member-info">
@@ -1102,13 +1187,13 @@
 
             <div class="faq-section">
                 <center> <h2>FAQ's</h2></center>
-                 <div class="dropdown-item">
-                   <input type="checkbox" id="faq-toggle-1" class="dropdown-toggle">
-                   <label for="faq-toggle-1" class="dropdown-button">How do I register for the MSET2025 conference? <span class="arrow">&#9660;</span></label>
-                   <div class="dropdown-content">
-                     <p>You can register for the MSET2025 conference by visiting our official registration page on the conference website. Fill out the required information and complete the payment process to secure your spot.</p>
-                   </div>
-                 </div>
+                    <div class="dropdown-item">
+                    <input type="checkbox" id="faq-toggle-1" class="dropdown-toggle">
+                    <label for="faq-toggle-1" class="dropdown-button">How do I register for the MSET2025 conference? <span class="arrow">&#9660;</span></label>
+                    <div class="dropdown-content">
+                        <p>You can register for the MSET2025 conference by visiting our official registration page on the conference website. Fill out the required information and complete the payment process to secure your spot.</p>
+                    </div>
+                    </div>
              
                  <div class="dropdown-item">
                    <input type="checkbox" id="faq-toggle-2" class="dropdown-toggle">
