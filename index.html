@@ -7,6 +7,7 @@
     </head>
 
     <body>
+        
 
         <div class="navbar">
             <div class="logo">
@@ -31,7 +32,7 @@
         </div>
 <hr>
 <div class="marquee-alternate">
-    <a href="https://forms.gle/AmMqxGii13QQccs77" target="_blank">🎉 FULL PAPER SUBMISSION  : [ 31 / 03 / 25] </a>
+    <a href="https://forms.gle/AmMqxGii13QQccs77" target="_blank">🎉 FULL PAPER SUBMISSION : [ 31 / 03 / 25] </a>
 </div>
 
         <div class="popup-container" id="popup">
@@ -84,6 +85,7 @@
               </div>
               
           </div>    
+          <div class="morph">
           <div class="slider-container">
             <button class="button prev">&#10094;</button>
             <div class="banner">
@@ -230,11 +232,14 @@
                 
             </div>
         </section>
-        
+        <div class="image-guest">
+            <img src="/assests/guest.png" class="image" width="100%">
+        </div>
         <section class="invitation-container">
             <div class="invitation">
                 <h1>The conference <span class="highlight">MSET2025!</span></h1>
             </div>
+            
             <div class="invitation-content">
                 <p>
                     Join us at the MSET2025 on <strong>April 2025</strong> in <strong>Trichy, Tamil Nadu.</strong> This event focuses on 
@@ -261,7 +266,9 @@
             </div>
         </section>
         
-
+        <div  class="logo2">
+            <img src="/assests/speakers.jpg" width="99%">
+        </div>
         <h1 class="top">WELCOME TO MSET2025!</h1>
         <div class="countdown-container">
             <center><p class="event-time">The event will start in</p>
@@ -271,7 +278,7 @@
             <span id="seconds"class="time">00</span> Seconds </center>
         </div>
 
-         <section id="key-dates">
+        <section id="key-dates">
             <div id="event-container" class="section">
                 <center><h2>Key Dates</h2></center>
                 <table class="registration-table">
@@ -301,11 +308,10 @@
                 
             </div>
         </section>
-
     
         <section id="topics">
             <div id="event-container" class="section">
-                <center><h1 style="font-size: 24px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif c:\Users\karth\Downloads\mset (2).png;">Thematic Sessions</h1></center>
+                <center><h1 style="font-size: 24px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Thematic Sessions</h1></center>
                     <div class="topics-container">
                         <div class="topic-card">
                                 <div class="topic-title">
@@ -614,12 +620,14 @@
                                 </div>
                             </div>
                         </div>
+
                 
                         <!-- Conference Advisors -->
                         <div class="dropdown-item">
-                            <input type="checkbox" id="committee-toggle" class="dropdown-toggle">
-                            <label for="committee-toggle" class="dropdown-button">Advisors & Chairs<span class="arrow">&#9660;</span></label>
+                            <input type="checkbox" id="committee" class="dropdown-toggle">
+                            <label for="committee" class="dropdown-button">Advisors & Chairs <span class="arrow">&#9660;</span></label>
                             <div class="dropdown-content">
+                        
                         <div class="team-category advisors-section">
                             <h3>Conference Advisors</h3>
                             <div class="team-grid">
@@ -935,7 +943,9 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
+                    
                         <div class="dropdown-item">
                             <input type="checkbox" id="committee-toggle" class="dropdown-toggle">
                             <label for="committee-toggle" class="dropdown-button">Organizing Committee <span class="arrow">&#9660;</span></label>
@@ -1241,7 +1251,7 @@
                    </div>
                  </div>
                </div>
-
+            </div>
                
               
                <footer>
@@ -1325,7 +1335,23 @@
                 </div>
             </footer>
         </body>            
-               
+        <script>
+            function revealImages() {
+                let images = document.querySelectorAll('.image');
+                let windowHeight = window.innerHeight;
+    
+                images.forEach(image => {
+                    let elementTop = image.getBoundingClientRect().top;
+    
+                    if (elementTop < windowHeight - 100) {
+                        image.classList.add("show");
+                    }
+                });
+            }
+    
+            window.addEventListener("scroll", revealImages);
+            window.addEventListener("load", revealImages);
+        </script>
    
 <script src="/script.js"></script>
 </html>
