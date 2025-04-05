@@ -204,7 +204,13 @@
                 </div>
             </div>
         </section>
-
+        <h1 style="text-align: center;"><span>Journal Publishers</span></h1>
+        <div class="image-row">
+            <img src="https://zh.library.ipm.edu.mo/sites/default/files/db-logo/db-logo-scopus.png" alt="Image 1" class="fade-in" />
+            <img src="https://naukamon.eu/wp-content/uploads/2020/11/Clarivate-Web-of-Science-4-536x282.jpg" alt="Image 2" class="fade-in" />
+            <img src="https://th.bing.com/th/id/OIP.xgDY28cXOBWlsqmMqeYPVwAAAA?rs=1&pid=ImgDetMain" alt="Image 3" class="fade-in" />
+          </div>
+          
         <div class="quick-links">
             <h2>Quick Links:</h2>
             <a href="#topics" class="btn">Conference</a>
@@ -1334,7 +1340,7 @@
             
                 <div class="footer-bottom">
                     <p>© studentdevelopercommunity. All Rights Reserved 2025</p>
-                    <p>Designed by Divya | VK
+                    <p>Designed by Divya | Varun Karthik
                     </p>
                     <a href="#">Terms & Conditions</a>
                 </div>
@@ -1357,6 +1363,21 @@
             window.addEventListener("scroll", revealImages);
             window.addEventListener("load", revealImages);
         </script>
-   
+   <script>
+    const images = document.querySelectorAll('.fade-in');
+  
+    const onScroll = () => {
+      images.forEach(img => {
+        const rect = img.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          img.classList.add('visible');
+        }
+      });
+    };
+  
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('load', onScroll);
+  </script>
+  
 <script src="/script.js"></script>
 </html>

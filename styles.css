@@ -438,6 +438,36 @@ strong{
     border-radius: 8px;
 }
 
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+    perspective: 1000px;
+    flex-wrap: wrap;
+  }
+  
+  .image-row img {
+    width: 250px;
+    border-radius: 15px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  /* Fade-in when visible */
+  .image-row img.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Hover 3D effect */
+  .image-row img:hover {
+    transform: rotateY(15deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 255, 200, 0.6);
+  }
 /*Quick Links*/
 .quick-links {
     text-align: center;
